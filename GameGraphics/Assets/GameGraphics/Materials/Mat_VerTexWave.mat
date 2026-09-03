@@ -110,7 +110,7 @@ Material:
     - _ClearCoatSmoothness: 0
     - _CrossWaveFrequency: 5
     - _CrossWaveSpeed: 1.1
-    - _CrossWaveSterngth: 0.8
+    - _CrossWaveSterngth: 2
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
@@ -133,9 +133,9 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _UvFlowSpeed: 0.2
-    - _WaveFrequency: 4
-    - _WaveSpeed: 1.5
+    - _UvFlowSpeed: 0.5
+    - _WaveFrequency: 5
+    - _WaveSpeed: 2
     - _WorkflowMode: 1
     - _XRMotionVectorsPass: 1
     - _ZWrite: 1
@@ -144,7 +144,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _UvFlowDirection: {r: 0.03, g: 0.08, b: 0, a: 0}
+    - _UvFlowDirection: {r: 0.05, g: 0.08, b: 0, a: 0}
     - _UvTiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
