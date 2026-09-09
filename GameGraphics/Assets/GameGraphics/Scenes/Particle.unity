@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &186919712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,11 +150,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Day10.ClickEffectSpawner
   targetCamera: {fileID: 237899438}
-  effectPrefab: {fileID: 294482153}
   groundMask:
     serializedVersion: 2
     m_Bits: 16
-  effectPool: {fileID: 0}
+  effectPool: {fileID: 839310814}
+  holdDelay: 0.2
+  spawnInterval: 0.1
 --- !u!4 &186919713
 Transform:
   m_ObjectHideFlags: 0
@@ -183,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
   m_Actions: {fileID: -944628639613478452, guid: ada823f607d81c9489405e7f8d41ecc2, type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -194,7 +195,39 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 186919712}
+        m_TargetAssemblyTypeName: Day10.ClickEffectSpawner, Assembly-CSharp
+        m_MethodName: OnPoint
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b1c4a060-f823-4912-ab6c-9917fd5222bc
+    m_ActionName: 'GamePlay/Point[/Mouse/position,/Pen/position]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 186919712}
+        m_TargetAssemblyTypeName: Day10.ClickEffectSpawner, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 965eafc1-e0ef-4461-b562-bcbad829f456
+    m_ActionName: 'GamePlay/Click[/Mouse/leftButton]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: GamePlay
@@ -382,7 +415,7 @@ Transform:
   m_GameObject: {fileID: 839310813}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05648, y: 0, z: -3.67033}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -628,87 +661,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!1 &1677739244
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1677739246}
-  - component: {fileID: 1677739245}
-  - component: {fileID: 1677739247}
-  m_Layer: 0
-  m_Name: Pressed
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1677739245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677739244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3e90532fa1a08e4c9bc8d673727fbff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PressedEffect
-  targetCamera: {fileID: 237899438}
-  effectPool: {fileID: 839310814}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 16
-  spawnInterval: 0.1
---- !u!4 &1677739246
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677739244}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05648, y: 0, z: -3.67033}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1677739247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677739244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
-  m_Actions: {fileID: -944628639613478452, guid: ada823f607d81c9489405e7f8d41ecc2, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: GamePlay
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1001 &4455938911707494929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -720,10 +672,6 @@ PrefabInstance:
     - target: {fileID: 686919558502936533, guid: c383f2f5628ae7c4abfd441ba0de3fd4, type: 3}
       propertyPath: m_Name
       value: FX_HitSpark_Test
-      objectReference: {fileID: 0}
-    - target: {fileID: 5647895716494808161, guid: c383f2f5628ae7c4abfd441ba0de3fd4, type: 3}
-      propertyPath: looping
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8749734550996867833, guid: c383f2f5628ae7c4abfd441ba0de3fd4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -780,4 +728,3 @@ SceneRoots:
   - {fileID: 186919713}
   - {fileID: 1131887582}
   - {fileID: 839310815}
-  - {fileID: 1677739246}
