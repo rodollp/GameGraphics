@@ -395,6 +395,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FX_HitSpark_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 5647895716494808161, guid: c383f2f5628ae7c4abfd441ba0de3fd4, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647895716494808161, guid: c383f2f5628ae7c4abfd441ba0de3fd4, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8749734550996867833, guid: c383f2f5628ae7c4abfd441ba0de3fd4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
