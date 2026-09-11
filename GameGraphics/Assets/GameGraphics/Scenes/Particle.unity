@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 186919713}
   - component: {fileID: 186919712}
   - component: {fileID: 186919714}
+  - component: {fileID: 186919715}
   m_Layer: 0
   m_Name: EffectInput
   m_TagString: Untagged
@@ -228,11 +229,35 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 965eafc1-e0ef-4461-b562-bcbad829f456
     m_ActionName: 'GamePlay/Click[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4c4b5952-cc3a-441c-b595-16d8933d8034
+    m_ActionName: 'GamePlay/LowIntensity[/Keyboard/1]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 937c67ef-3c64-4e4d-9b81-82115393ceab
+    m_ActionName: 'GamePlay/HighIntensity[/Keyboard/2]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: GamePlay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &186919715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186919711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b6c40b262968749a288f8577e7d8af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VfxIntensityController
+  visualEffect: {fileID: 2118415034}
+  spawnRateName: SpawnRate
+  lowRate: 20
+  highRate: 100
 --- !u!1 &237899436
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,7 +345,7 @@ Transform:
   m_GameObject: {fileID: 237899436}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -5.48}
+  m_LocalPosition: {x: 0, y: 1, z: -6.574}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -773,7 +798,7 @@ Transform:
   m_GameObject: {fileID: 2118415032}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.16632833, y: 0.71, z: 1.0237869}
+  m_LocalPosition: {x: 0, y: 4.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

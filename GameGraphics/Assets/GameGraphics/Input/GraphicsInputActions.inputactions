@@ -25,6 +25,26 @@
                     "interactions": "",
                     "initialStateCheck": false,
                     "priority": 0
+                },
+                {
+                    "name": "LowIntensity",
+                    "type": "Button",
+                    "id": "4c4b5952-cc3a-441c-b595-16d8933d8034",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "HighIntensity",
+                    "type": "Button",
+                    "id": "937c67ef-3c64-4e4d-9b81-82115393ceab",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -47,6 +67,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5e681a95-3ba0-4803-b6fc-07eb91758022",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LowIntensity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0763e466-f865-43ff-95d6-12cd0022a9e2",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HighIntensity",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
