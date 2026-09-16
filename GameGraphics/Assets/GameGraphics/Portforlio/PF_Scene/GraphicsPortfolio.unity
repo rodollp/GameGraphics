@@ -1123,7 +1123,7 @@ MonoBehaviour:
   shieldLayer:
     serializedVersion: 2
     m_Bits: 128
-  hitSpark: {fileID: 3944179683833764245, guid: 040be388af7ff8e45837c8237339ee42, type: 3}
+  hitSpark: {fileID: 1983864826}
 --- !u!114 &1834052760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1154,6 +1154,11 @@ MonoBehaviour:
   m_DefaultActionMap: PlayEvent
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!198 &1983864826 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3944179683833764245, guid: 040be388af7ff8e45837c8237339ee42, type: 3}
+  m_PrefabInstance: {fileID: 646749368}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
