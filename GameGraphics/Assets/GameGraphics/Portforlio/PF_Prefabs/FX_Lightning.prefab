@@ -10,19 +10,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 686919558502936533, guid: c383f2f5628ae7c4abfd441ba0de3fd4, type: 3}
       propertyPath: m_Name
-      value: FX_HitSpark_Test Variant
+      value: FX_Lightning
       objectReference: {fileID: 0}
     - target: {fileID: 8749734550996867833, guid: c383f2f5628ae7c4abfd441ba0de3fd4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.0526779
       objectReference: {fileID: 0}
     - target: {fileID: 8749734550996867833, guid: c383f2f5628ae7c4abfd441ba0de3fd4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.3398931
       objectReference: {fileID: 0}
     - target: {fileID: 8749734550996867833, guid: c383f2f5628ae7c4abfd441ba0de3fd4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.2433915
       objectReference: {fileID: 0}
     - target: {fileID: 8749734550996867833, guid: c383f2f5628ae7c4abfd441ba0de3fd4, type: 3}
       propertyPath: m_LocalRotation.w
