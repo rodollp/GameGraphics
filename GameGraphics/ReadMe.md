@@ -2,6 +2,14 @@
 
 Unity 6 / URP 환경에서 제작한 그래픽 쇼케이스입니다.
 
+## 위치
+
+GameGraphics/Portfolio/PF_Scene/GraphicsPortfolio 
+
+## 시연 방법  
+
+마우스로 쉴드를 클릭하면 쉴드가 부서진다
+
 ## 1. 그래픽 콘셉트
 
 마법 훈련장을 콘셉트로 제작했습니다.  
