@@ -1,0 +1,57 @@
+{
+    "version": 1,
+    "name": "PF_InputAction",
+    "maps": [
+        {
+            "name": "PlayEvent",
+            "id": "ca445a3e-debd-468c-96d4-ec416f283241",
+            "actions": [
+                {
+                    "name": "LockOn",
+                    "type": "Value",
+                    "id": "73f30631-1298-495f-a0a5-8b660b1b4827",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true,
+                    "priority": 0
+                },
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "32ea4791-94a7-417e-aa11-75bc55137467",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e6e61912-0af5-4593-9f79-43306717fc3b",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LockOn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8cc42fe7-98f4-4c86-bb62-7a130a7c4e5b",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
