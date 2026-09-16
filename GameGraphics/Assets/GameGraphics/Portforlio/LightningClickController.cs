@@ -1,11 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.VFX;
 
 public class LightningClickController : MonoBehaviour
 {
     [SerializeField] private Camera targetCamera;
-    [SerializeField] private VisualEffect lightningVFX;
+    [SerializeField] private ParticleSystem lightningEffect;
     [SerializeField] private ShieldTarget shieldTarget;
     [SerializeField] private LayerMask shieldLayer;
 
@@ -25,10 +24,7 @@ public class LightningClickController : MonoBehaviour
 
         if (Physics.Raycast(ray, out RaycastHit hit, 100f, shieldLayer))
         {
-            lightningVFX.transform.position = hit.point;
-
-            lightningVFX.Reinit();
-            lightningVFX.Play();
+            lightningEffect.Play(true);
 
             shieldTarget.TakeDamage(25f);
         }
